@@ -40,13 +40,13 @@ print(dataset.groupby('class').size())
 
 #DATA VISUALIZATION
 
-""" Data need to extend  with some visualizations.
+"""   Data need to extend  with some visualizations.
 
-We are going to look at two types of plots:
+      We are going to look at two types of plots:
 
-1)Univariate plots to better understand each attribute.
+      1)Univariate plots to better understand each attribute.
 
-2)Multivariate plots to better understand the relationships between attributes."""
+      2)Multivariate plots to better understand the relationships between attributes."""
 
 #univariant plots
 #box and whisker plots
@@ -67,7 +67,6 @@ plt.show()
 
 #create a validation dataset
 #Split-out validation dataset(80% & 20%)
-#seed ????
 
 array=dataset.values
 X =array[:,0:4]
@@ -99,7 +98,7 @@ models.append(('NB',GaussianNB()))
 models.append(('SVM',SVC()))
 
 #evaluate each model in turn
-#??study about the cross validation
+
 
 results = []
 names = []
@@ -109,7 +108,7 @@ for name,model in models:
    cv_results = cross_validation.cross_val_score(model, X_train, Y_train, cv=Kfold, scoring=scoring)
    results.append(cv_results)
    names.append(name)
-   msg = "%s: %f (%f)" % (name, cv_results.mean(), cv_results.std())   #need to know
+   msg = "%s: %f (%f)" % (name, cv_results.mean(), cv_results.std())  
    print(msg)
 
 #select best model
@@ -118,7 +117,7 @@ for name,model in models:
 
 fig = plt.figure()
 fig.suptitle('Algorithm Comparision')
-ax = fig.add_subplot(111) #?111
+ax = fig.add_subplot(111) 
 plt.boxplot(results)
 ax.set_xticklabels(names)
 plt.show()
