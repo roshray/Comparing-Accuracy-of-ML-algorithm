@@ -13,7 +13,7 @@ Overview:
                 pandas
                 sklearn
                 
-# how to install 
+# How to install
 
          Eg:[roshan@rosh ~]$ pip install numpy 
          Apply to all dependencies.
