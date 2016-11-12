@@ -6,3 +6,20 @@ Overview:
         4)Visualizing the dataset.
         5)Evaluating some algorithms.
         6)Making some predictions.
+
+# Dependencies
+                numpy
+                matplotlib
+                pandas
+                sklearn
+                
+# how to install 
+
+         Eg:[roshan@rosh ~]$ pip install numpy 
+         Apply to all dependencies.
+ 
+
+                
+
+                
+
