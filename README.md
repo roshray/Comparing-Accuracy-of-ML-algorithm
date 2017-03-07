@@ -1,4 +1,4 @@
-# Hello-world-machine-learning-project-in-Python
+# Comparing different ML algorithm Accuracy 
 Overview:
         1)Installing the Python and SciPy platform.
         2)Loading the dataset. (https://archive.ics.uci.edu/ml/datasets/Iris)
