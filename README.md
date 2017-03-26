@@ -18,7 +18,7 @@ Overview:
          Eg:[roshan@rosh ~]$ pip install numpy 
          Apply to all dependencies.
  
-
+# Hand Written Digits Recognition  Using Scikit Learn 
                 
 
                 
